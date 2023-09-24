@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<title>Иллюстраторы.ру</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.6/swiper-bundle.min.css" rel="stylesheet" />
+		<link href="/illustrators/index.88e43b6d.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<svg style="display: none">
+			<defs>
+				<symbol fill="none" id="arrow-left" stroke-linecap="square" stroke-linejoin="arcs" stroke-width="2" viewbox="0 0 24 24">
+					<path d="M19 12H6M12 5l-7 7 7 7"></path>
+				</symbol>
+				<symbol fill="none" id="arrow-right" stroke-linecap="square" stroke-linejoin="arcs" stroke-width="2" viewbox="0 0 24 24">
+					<path d="M5 12h13M12 5l7 7-7 7"></path>
+				</symbol>
+				<symbol fill="none" id="chevron-down" stroke-linecap="square" stroke-linejoin="arcs" stroke-width="2" viewbox="0 0 24 24">
+					<path d="M6 9l6 6 6-6"></path>
+				</symbol>
+			</defs>
+		</svg>
+		<div class="page">
+			<header class="header header--index">
+				<div class="header__inner">
+					<div class="header__logo">
+						<div class="header__logo-text">Иллюстраторы.ру</div>
+					</div>
+					<nav class="header__nav">
+						<ul class="header__nav-list">
+							<li class="header__nav-item">
+								<div class="dropdown header__nav-dropdown">
+									<button class="button dropdown__trigger" type="button">
+										<span class="button__text">Сообщество</span>
+										<svg width="24" height="24" class="button__icon">
+											<use href="#chevron-down"></use>
+										</svg>
+									</button>
+									<ul class="dropdown__list">
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">Авторы</a>
+										</li>
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">Блог</a>
+										</li>
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">Иллюстрации</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link" href="#">Конкурсы</a>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link" href="#">Магазин</a>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link" href="#">Подписка</a>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link" href="#">Работа</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__sign-in">
+						<a class="button header__sign-in-link" href="https://illustrators.ru/users/sign_in">Войти</a>
+					</div>
+				</div>
+			</header>
+			<main class="main">
+				<div class="intro">
+					<div class="intro__container">
+						<h1 class="intro__title">Иллюстраторы.ру — это сообщество русскоязычных художников и иллюстраторов</h1>
+						<div class="intro__actions">
+							<a class="button button--accent intro__join" href="https://illustrators.ru/users/sign_up">
+								<span class="button__text">Присоединиться</span>
+								<svg class="button__icon">
+									<use xlink:href="#arrow-right"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<section class="section">
+					<div class="section__container">
+						<h2 class="visually-hidden">Секции</h2>
+						<form class="filter-panel">
+							<fieldset class="filter-panel__inner">
+								<legend class="visually-hidden"></legend>
+								<ul class="filter-panel__list">
+									<li class="filter-panel__item">
+										<a class="button filter-panel__link filter-panel__link--active">Выбор редакции</a>
+									</li>
+									<li class="filter-panel__item">
+										<a class="button filter-panel__link">Премиум</a>
+									</li>
+									<li class="filter-panel__item">
+										<a class="button filter-panel__link">Рейтинговые</a>
+									</li>
+									<li class="filter-panel__item">
+										<a class="button filter-panel__link">Популярные</a>
+									</li>
+									<li class="filter-panel__item">
+										<a class="button filter-panel__link">Просматриваемые</a>
+									</li>
+								</ul>
+							</fieldset>
+						</form>
+						<ul class="illustrations-list"></ul>
+					</div>
+				</section>
+				<div class="tabs">
+					<nav class="tabs__nav">
+						<div class="tabs__nav-inner">
+							Откройте для себя лучшие работы
+							<a class="tabs__nav-link tabs__nav-link--is-active" data-tab="day">дня</a>
+							и
+							<a class="tabs__nav-link" data-tab="week">недели</a>
+						</div>
+					</nav>
+					<div class="tabs__panels">
+						<section class="section tabs__panel tabs__panel--is-visible" data-tab="day">
+							<div class="section__container">
+								<h2 class="visually-hidden">День</h2>
+								<div class="swiper-container" id="day">
+									<div class="swiper-wrapper"></div>
+									<button class="button swiper-button-next" type="button">
+										<svg width="24" height="24" class="button__icon">
+											<use href="#arrow-right"></use>
+										</svg>
+									</button>
+									<button class="button swiper-button-prev" type="button">
+										<svg width="24" height="24" class="button__icon">
+											<use href="#arrow-left"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="section__actions">
+									<button class="button button--accent" type="button">
+										<span class="button__text">Все работы</span>
+										<svg width="24" height="24" class="button__icon">
+											<use href="#arrow-right"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</section>
+						<section class="section tabs__panel" data-tab="week">
+							<div class="section__container">
+								<h2 class="visually-hidden">Неделя</h2>
+								<div class="swiper-container" id="week">
+									<div class="swiper-wrapper"></div>
+									<button class="button swiper-button-next" type="button">
+										<svg width="24" height="24" class="button__icon">
+											<use href="#arrow-right"></use>
+										</svg>
+									</button>
+									<button class="button swiper-button-prev" type="button">
+										<svg width="24" height="24" class="button__icon">
+											<use href="#arrow-left"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="section__actions">
+									<button class="button button--accent" type="button">
+										<span class="button__text">Все работы</span>
+										<svg width="24" height="24" class="button__icon">
+											<use href="#arrow-right"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+				<section class="section">
+					<div class="section__container">
+						<h2 class="section__title">Познакомьтесь с ведущими авторами</h2>
+						<ul class="authors-list"></ul>
+					</div>
+				</section>
+				<section class="features">
+					<div class="features__container">
+						<div class="features__content">
+							<h2 class="features__title">Поддержите проект и получите доступ к дополнительным возможностям, а именно:</h2>
+							<ul class="features__list">
+								<li class="features__item">неограниченное количество работ в портфолио;</li>
+								<li class="features__item">больше потенциальных клиентов увидят ваши иллюстрации;</li>
+								<li class="features__item">неограниченное количество откликов на заказы.</li>
+							</ul>
+							<div class="features__actions">
+								<a class="button button--accent" href="#">
+									<span class="button__text">Оформить подписку</span>
+									<svg class="button__icon">
+										<use xlink:href="#arrow-right"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<aside class="features__aside">
+							<figure class="features__figure">
+								<img class="features__image" src="/illustrators/ad80e8ba5dee990f8c9e44cef2f9508a.f135330a.jpg" />
+							</figure>
+						</aside>
+					</div>
+				</section>
+				<section class="section">
+					<div class="section__container">
+						<h2 class="section__title">Ознакомьтесь с предложениями о работе и найдите то, что вам нравится</h2>
+						<ul class="jobs-list"></ul>
+						<div class="section__actions">
+							<a class="button" href="https://illustrators.ru/users/sign_up">
+								<span class="button__text">Перейти в раздел</span>
+								<svg class="button__icon">
+									<use xlink:href="#arrow-right"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="subscription">
+					<div class="subscription__container">
+						<h2 class="subscription__title">Подпишитесь на рассылку</h2>
+						<div class="subscription__text">Обещаем делиться только самым интересным</div>
+						<form class="subscription__form">
+							<div class="subscription__field">
+								<label class="visually-hidden">Электронная почта</label>
+								<input autocomplete="off" class="input subscription__input" placeholder="Электронная почта" type="email" />
+							</div>
+							<button class="button button--accent subscription__button" type="button">Подписаться</button>
+						</form>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__inner">
+					<div class="footer__top">
+						<div class="footer__copyright">
+							<div class="footer__copyright-text">© 2007–2021 Иллюстраторы.ру</div>
+						</div>
+						<div class="footer__socials">
+							<ul class="footer__socials-list">
+								<li class="footer__socials-item">
+									<a class="footer__socials-link link" href="https://vk.com/portal_lllustrators">ВКонтакте</a>
+								</li>
+								<li class="footer__socials-item">
+									<a class="footer__socials-link link" href="">Инстаграм</a>
+								</li>
+								<li class="footer__socials-item">
+									<a class="footer__socials-link link" href="https://ru.pinterest.com/illustrator6130/">Пинтерест</a>
+								</li>
+								<li class="footer__socials-item">
+									<a class="footer__socials-link link" href="https://t.me/illustrators">Телеграм</a>
+								</li>
+								<li class="footer__socials-item">
+									<a class="footer__socials-link link" href="">Фейсбук</a>
+								</li>
+							</ul>
+						</div>
+						<nav class="footer__nav">
+							<ul class="footer__nav-list">
+								<li class="footer__nav-item">
+									<a class="footer__nav-link link" href="https://illustrators.ru/about">О проекте</a>
+								</li>
+								<li class="footer__nav-item">
+									<a class="footer__nav-link link" href="https://illustrators.ru/support">Помощь</a>
+								</li>
+								<li class="footer__nav-item">
+									<a class="footer__nav-link link" href="https://illustrators.ru/rules">Правила</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="footer__contacts">
+							<ul class="footer__contacts-list">
+								<li class="footer__contacts-item">
+									<a class="footer__contacts-link link" href="">support@illustrators.ru</a>
+								</li>
+								<li class="footer__contacts-item">
+									<a class="footer__contacts-link link" href="">+7 495 789 12 55</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__author">
+							<div class="footer__author-text">Автор проекта — Валерий Гольников</div>
+						</div>
+						<div class="footer__design">
+							<div class="footer__design-text">Дизайнер — Степан Любавцев</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.6/swiper-bundle.min.js"></script>
+		<script src="/illustrators/index.484a35d6.js" type="module"></script>
+		<script src="/illustrators/index.4dfd8072.js" nomodule="" defer></script>
+	</body>
+</html>
